@@ -1,8 +1,7 @@
-# NLP
-nlp project
+# NLP Learning
 
-# Comparision of different methods
-
+# Task 1: Sentiment Analysis https://www.kaggle.com/competitions/word2vec-nlp-tutorial/overview
+## Comparision of different methods for sentiment analysis
 | model     | score |    netes          |
 |--------------|--------|------------------|
 | CountVectorizer + Random Forest | 0.84640  |  |
