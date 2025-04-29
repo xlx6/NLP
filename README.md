@@ -1,6 +1,6 @@
 # NLP Learning
 
-# Task 1: Sentiment Analysis https://www.kaggle.com/competitions/word2vec-nlp-tutorial/overview
+## [Task 1: Sentiment Analysis](https://www.kaggle.com/competitions/word2vec-nlp-tutorial/overview)
 ## Comparision of different methods for sentiment analysis
 | model     | score |    netes          |
 |--------------|--------|------------------|
