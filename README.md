@@ -9,5 +9,5 @@ nlp project
 | Word2vec(Avg) + Random Forest | 0.83180  |  |
 | Word2vec(Clustered) + Random Forest | 0.84172  |  |
 | Word2vec(Avg) + MLP   | 0.87648  | |
-| BERT + MLP   |   | freeze BERT, train MLP |
-| BERT + MLP   | 0.92640  | unfreeze the last 4 layers of BERT|
+| BERT + MLP   | 0.85224  | freeze BERT, train MLP |
+| BERT + MLP   | **0.92640**  | **unfreeze the last 4 layers of BERT**|
