@@ -69,9 +69,9 @@
 
 情感分类任务中，一些关键词（如“good”，“boring”）是影响判别的关键。当前`[CLS]`对比过于粗糙，无法捕捉到这些细节。
 
-为了简单起见，**每个 sample 选择其`[CLS]`关注度最高的 $k$ 个 token， 将这 $k$ 个 token 看作一个 sample 的不同视角**，这样就能很容易的扩展多视角对比。与 SupConLoss 一样，一个 batch 中的同类为正样本，不同类为负样本。代码见`utils/func.select_topk_tokens`
+为了简单起见，**每个 sample 选择其`[CLS]`关注度最高的 $k$ 个 token， 将这 $k$ 个 token 看作一个 sample 的不同视角**，这样就能很容易的扩展多视角对比。与 SupConLoss 一样，一个 batch 中的同类为正样本，不同类为负样本。[代码见`utils/func.select_topk_tokens`](./utils/func.py)
 
-随后我又实现了一个聚类的版本，使用 `K-Means` 聚类算法对每个 sample 的 $k$ 个token聚类。代码见`utils/func.cluster_views`
+随后我又实现了一个聚类的版本，使用 `K-Means` 聚类算法对每个 sample 的 $k$ 个token聚类。[代码见`utils/func.cluster_views`](./utils/func.py)
 
 
 
@@ -89,7 +89,7 @@
 
 
 
-#### `Token-Level` `[CLS]` 表征t-SNE可视化 （训练集 20000 samples)
+#### `Token-Level` `[CLS]` 表征t-SNE可视化 （训练集 20000 samples）
 
 | K\\$\alpha$ |                             0.2                              |                             0.5                              |
 | :---------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
@@ -135,7 +135,7 @@
 - `token`：字符级对比损失
 - `sentence`：句子级对比损失
 
-代码实现见./imdb_deberta_multilayers_contrastic.py，训练脚本./multilayers_train.sh
+[代码实现见./imdb_deberta_multilayers_contrastic.py](./imdb_deberta_multilayers_contrastic.py)，[训练脚本:./multilayers_train.sh](./multilayers_train.sh)
 
 #### 实验结果
 
