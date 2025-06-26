@@ -1,0 +1,52 @@
+[
+    {
+        "contrastic_layers": [0, 1, 2, 3],
+        "contrastic_level": "sentence",
+        "score": 0.95104
+    },
+    {
+        "contrastic_layers": [4, 5, 6, 7],
+        "contrastic_level": "sentence",
+        "score": 0.95288
+    },
+    {
+        "contrastic_layers": [8, 9, 10, 11],
+        "contrastic_level": "sentence",
+        "score": 0.95212
+    },
+    {
+        "contrastic_layers": [2, 5, 8, 11],
+        "contrastic_level": "sentence",
+        "score": 0.95164
+    },
+    {
+        "contrastic_layers": [5, 7, 9, 11],
+        "contrastic_level": "sentence",
+        "score": 0.95232
+    },
+    {
+        "contrastic_layers": [0, 1, 2, 3],
+        "contrastic_level": "token",
+        "score": 0.93300
+    },
+    {
+        "contrastic_layers": [4, 5, 6, 7],
+        "contrastic_level": "token",
+        "score": 0.90376
+    },
+    {
+        "contrastic_layers": [8, 9, 10, 11],
+        "contrastic_level": "token",
+        "score": 0.94728
+    },
+    {
+        "contrastic_layers": [2, 5, 8, 11],
+        "contrastic_level": "token",
+        "score": 0.93756
+    },
+    {
+        "contrastic_layers": [5, 7, 9, 11],
+        "contrastic_level": "token",
+        "score": 0.93864
+    }
+]
