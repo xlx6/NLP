@@ -8,7 +8,7 @@
 
 GPU: RTX 3090 24GB
 
-[实验日志]([Knowledge-Distillation](https://swanlab.cn/@lxxing666/Knowledge-Distillation/overview))
+[实验日志](https://swanlab.cn/@lxxing666/Knowledge-Distillation/overview)
 
 ### 基线
 
@@ -28,9 +28,7 @@ $$
 
 ### 蒸馏
 
-$$
-\mathcal{L}=\alpha \mathcal{L}_{ce} + （1-\alpha） \mathcal{L}_{logits_{KL}}
-$$
+$\mathcal{L}=\alpha \mathcal{L}_{ce} + (1-\alpha) \mathcal{L}_{logits_{KL}}$
 
 - 其中 $\alpha$ 固定为 0.5。
 
@@ -46,9 +44,8 @@ $$
 默认初始化的模型的蒸馏结果和直接训练该模型几乎没有提升，如果选择更多中间表征向教师对齐得到的结果是否会更好呢？
 
 下面将对多层特征蒸馏：
-$$
-\mathcal{L}=\alpha \mathcal{L}_{ce} + (1-\alpha)(\mathcal{L}_{logits_{KL}}+\sum_{i\in \mathcal{A}} \mathcal{L}_{hidden_{MSE}}^i)
-$$
+
+$\mathcal{L}=\alpha \mathcal{L}_{ce} + (1-\alpha)(\mathcal{L}_{logits_{KL}}+\sum_{i\in \mathcal{A}} \mathcal{L}_{hidden_{MSE}}^i)$
 
 - 其中 $\mathcal{A}$ 为选择的中间层索引集合。
 
